@@ -13,14 +13,15 @@ Adds Waybar theme integration when Omarchy switches themes.
 
 ## Install
 
-1. Keep the hook script at:
-   - `~/Projects/bash/hooks/theme-set`
-2. Symlink it into Omarchy's hook location:
+1. Keep the hook script in this repo:
+   - `<repo>/theme-set`
+2. Symlink it into Omarchy's hook location (run from the repo root):
 
 ```bash
+cd /path/to/omarchy-theme-hook-waybar
 mkdir -p ~/.config/omarchy/hooks
-ln -snf ~/Projects/bash/hooks/theme-set ~/.config/omarchy/hooks/theme-set
-chmod +x ~/Projects/bash/hooks/theme-set
+ln -snf "$PWD/theme-set" ~/.config/omarchy/hooks/theme-set
+chmod +x "$PWD/theme-set"
 ```
 
 ## Usage
